@@ -10,6 +10,6 @@ class DashboardController extends Controller
     public function index()
     {
         // Mengirim data ke view dashboard
-        return view('admin.dashboard');
+        return view('user.dashboard');
     }
 }
