@@ -67,15 +67,23 @@
     </div>
     
    
+
+    <div class="p-3 bg-dark" style="width: 100%; height: 400px;" >.bg-secondary-subtle</div>
+
     <div class="p-3 bg-dark" style="width: 100%; height: 230px;" >
       <h1 class="fw-bold" style="color: orange;">Tentang Kami</h1>
       <h5 class="text-white fw-medium fs-5"> Platform yang memudahkan Anda untuk menyewa lapangan olahraga dan alat di Banyuwangi secara online. Baik untuk futsal, basket, voli, atau kegiatan olahraga lainnya, Anda bisa mencari dan memesan lapangan serta peralatan dengan cepat dan mudah. Dapatkan informasi ketersediaan, harga, dan fasilitas langsung melalui aplikasi kami. Nikmati pengalaman penyewaan yang praktis dan efisien, tanpa ribet!</h5>
     </div>
 
 
+
     
     <div class="p-3" style="width: 100%; height: 600px; background-color: #FF8C00; color: #FF4500; ">
       <!-- Kategori -->
+      <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
+        <h1>Kategori<br></h1>
+        <h4><p>Tempat atau Fasilitas Apa Saja Yang Dapat Disewa</p></h4>
+      </div>
       <div class="container">
         <div class="container px-10 text-center">
           <div class="p1"></div>
@@ -108,7 +116,9 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
+
                   <img src="{{ asset('assets/gambar/sirkuit.jpg') }}" class="card-img-top" alt="...">
+
                     <div class="card-body">
                       <h5 class="card-title">Sirkuit BMX Muncar</h5>
                       <p class="card-text">Sirkuit BMX muncar meruakan sirkuit milik pemerintah kabupaten banyuwangi, Sirkuit ini menjadi satu santunya lintasan BMX yang sesuai dengan standarisasi UCI(Union Cliyce Internasioanl).</p>
@@ -200,7 +210,7 @@
     </div>
     
 
-    <div class="p-3 bg-dark" style="width: 100%; height: 400px;" >.bg-secondary-subtle</div>
+    <div class="p-3 bg-dark" style="width: 100%; height: 500px;" >.bg-secondary-subtle</div>
     
 
 
