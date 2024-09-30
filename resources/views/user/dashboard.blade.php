@@ -84,12 +84,14 @@
     </div>
     
    
-    <div class="p-3 bg-dark" style="width: 100%; height: 200px;" >.bg-secondary-subtle</div>
-
-
+    <div class="p-3 bg-dark" style="width: 100%; height: 400px;" >.bg-secondary-subtle</div>
     
     <div class="p-3" style="width: 100%; height: 600px; background-color: #FF8C00; color: #FF4500; ">
       <!-- Kategori -->
+      <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
+        <h1>Kategori<br></h1>
+        <h4><p>Tempat atau Fasilitas Apa Saja Yang Dapat Disewa</p></h4>
+      </div>
       <div class="container">
         <div class="container px-10 text-center">
           <div class="p1"></div>
@@ -110,7 +112,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
-                  <img src="{{ asset('assets/gambar/stadiun.jpg') }}" class="card-img-top" alt="...">
+                  <img src="{{ asset('assets/gambar/gor.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Gor TawangAlun</h5>
                       <p class="card-text">GOR Tawang Alun Banyuwangi adalah gedung olahraga yang terletak di Desa Mojopanggung, Kecamatan Giri, Banyuwangi. GOR ini memiliki berbagai fasilitas untuk mendukung atlet Banyuwangi dalam berbagai cabang olahraga.</p>
@@ -122,7 +124,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
-                  <img src="{{ asset('assets/gambar/stadiun.jpg') }}" class="card-img-top" alt="...">
+                  <img src="{{ asset('assets/gambar/sirkuit.jfif') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Sirkuit BMX Muncar</h5>
                       <p class="card-text">Sirkuit BMX muncar meruakan sirkuit milik pemerintah kabupaten banyuwangi, Sirkuit ini menjadi satu santunya lintasan BMX yang sesuai dengan standarisasi UCI(Union Cliyce Internasioanl).</p>
@@ -214,7 +216,7 @@
     </div>
     
 
-    <div class="p-3 bg-dark" style="width: 100%; height: 400px;" >.bg-secondary-subtle</div>
+    <div class="p-3 bg-dark" style="width: 100%; height: 500px;" >.bg-secondary-subtle</div>
     
 
 
