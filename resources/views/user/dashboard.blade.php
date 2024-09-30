@@ -29,7 +29,7 @@
               <a class="nav-link text-white" href="#">Paduan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: orange;" href="#">Login</a>
+              <a class="nav-link" style="color: orange;" href="{{ route('login')}}">Login</a>
             </li>
           </ul>
       </div>

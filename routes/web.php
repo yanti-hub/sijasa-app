@@ -16,9 +16,9 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/tes', function () {
+     return view('welcome');
+});
 
 // Route::get('/', function () {
 //     return view('layout-admin.admin');
@@ -27,7 +27,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
-<<<<<<< HEAD
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -39,7 +39,7 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-=======
+
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
->>>>>>> a03af0137d092770099a951e8b22fc031941fe3a
+
