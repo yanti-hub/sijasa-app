@@ -10,7 +10,7 @@
   
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark ">
       <div class="container-fluid">
         <a class="navbar-brand text-white fw-bolder" href="#">
           <img src="{{ asset('assets/sijasa.png') }}" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
@@ -96,7 +96,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
-                  <img src="{{ asset('assets/gambar/stadiun.jpg') }}" class="card-img-top" alt="...">
+                  <img src="{{ asset('assets/gambar/gor.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Gor TawangAlun</h5>
                       <p class="card-text">GOR Tawang Alun Banyuwangi adalah gedung olahraga yang terletak di Desa Mojopanggung, Kecamatan Giri, Banyuwangi. GOR ini memiliki berbagai fasilitas untuk mendukung atlet Banyuwangi dalam berbagai cabang olahraga.</p>
@@ -108,7 +108,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
-                  <img src="{{ asset('assets/gambar/stadiun.jpg') }}" class="card-img-top" alt="...">
+                  <img src="{{ asset('assets/gambar/sirkuit.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Sirkuit BMX Muncar</h5>
                       <p class="card-text">Sirkuit BMX muncar meruakan sirkuit milik pemerintah kabupaten banyuwangi, Sirkuit ini menjadi satu santunya lintasan BMX yang sesuai dengan standarisasi UCI(Union Cliyce Internasioanl).</p>
