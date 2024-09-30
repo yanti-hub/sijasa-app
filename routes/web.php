@@ -16,17 +16,16 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-Route::get('/tes', function () {
-     return view('welcome');
-});
+// Route::get('/tes', function () {
+//      return view('welcome');
+// });
 
 // Route::get('/', function () {
 //     return view('layout-admin.admin');
 // });
-Route::get('/', function () {
-    return view('auth.login');
-});
-
+// Route::get('/', function () {
+//     return view('auth.login');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
