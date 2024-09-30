@@ -11,18 +11,19 @@
     <link rel="stylesheet" href="{{ asset('/template/dist/assets/vendors/bootstrap-icons/bootstrap-icons.css')}}">
     <link rel="stylesheet" href="{{ asset('/template/dist/assets/css/app.css')}}">
     <link rel="stylesheet" href="{{ asset('/template/dist/assets/css/pages/auth.css')}}">
+   
 </head>
 
-<body>
+<body>       
     <div id="auth" class="d-flex justify-content-center align-items-center vh-100">
         <div class="col-lg-6 col-md-8 col-sm-10"> <!-- Membatasi lebar card agar tidak terlalu besar di layar besar -->
             <div class="card shadow-lg"> <!-- Card dengan efek bayangan -->
                 <div class="card-body"> <!-- Isi dari card -->
                     <div id="auth-left">
-                        <div class="auth-logo mb-4">
+                        <!-- <div class="auth-logo mb-4">
                             <a href="index.html"><img src="{{ asset('/template/dist/assets/images/logo/logo.png')}}" alt="Logo"></a>
-                        </div>
-                        <h1 class="auth-title text-center">Login</h1>
+                        </div> -->
+                        <h1 class="auth-title text-center ">Login</h1>
                         <p class="auth-subtitle text-center mb-5">Log in with your data that you entered during registration.</p>
 
                         <form action="index.html">
@@ -51,7 +52,7 @@
                                     class="font-bold">Sign
                                     up</a>.</p>
                             <p><a class="font-bold" href="{{ route('password.request') }}">Forgot password?</a>.</p>
-                        <    </p>
+                            </p>
                         </div>
                     </div>
                 </div> <!-- End of card-body -->
