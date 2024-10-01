@@ -13,7 +13,7 @@
   
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark ">
       <div class="container-fluid">
         <a class="navbar-brand text-white fw-bolder" href="#">
           <img src="{{ asset('assets/sijasa.png') }}" alt="" width="30" height="30" class="d-inline-block align-text-top rounded-circle">
@@ -165,7 +165,7 @@
 
 
     
-    <div class="p-3" style="width: 100%; height: 600px; background-color: #FF8C00; color: #FF4500; ">
+    <div class="p-3" style="width: 100%; height: 700px; background-color: #FF8C00; color: #FF4500; ">
       <!-- Kategori -->
       <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
         <h1>Kategori<br></h1>
@@ -203,6 +203,7 @@
             <div class="col">
               <div class="p-3">
                 <div class="card" style="width: 18rem;">
+
                   <img src="{{ asset('assets/gambar/sirkuit.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Sirkuit BMX Muncar</h5>
