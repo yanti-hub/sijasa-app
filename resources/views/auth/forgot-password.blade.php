@@ -34,7 +34,7 @@
                             <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Send</button>
                         </form>
                         <div class="text-center mt-5 text-lg fs-4">
-                            <p class='text-gray-600'>Remember your account? <a href="{{ route('login') }}" class="font-bold">Login</a>.
+                            <p class='text-gray-600'>Remember your account? <a href="{{ route('auth.login') }}" class="font-bold">Login</a>.
                             </p>
                         </div>
                     </div>
