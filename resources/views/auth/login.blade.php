@@ -15,7 +15,7 @@
 </head>
 
 <body>       
-    <div id="auth" class="d-flex justify-content-center align-items-center vh-100">
+    <div id="auth" class="d-flex justify-content-center align-items-center vh-50">
         <div class="col-lg-6 col-md-8 col-sm-10"> <!-- Membatasi lebar card agar tidak terlalu besar di layar besar -->
             <div class="card shadow-lg"> <!-- Card dengan efek bayangan -->
                 <div class="card-body"> <!-- Isi dari card -->
@@ -48,10 +48,10 @@
                             <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
                         </form>
                         <div class="text-center mt-5 text-lg fs-4">
-                            <p class="text-gray-600">Don't have an account? <a href="{{ route('register') }}"
+                            <p class="text-gray-600">Don't have an account? <a href="{{ route('auth.register') }}"
                                     class="font-bold">Sign
                                     up</a>.</p>
-                            <p><a class="font-bold" href="{{ route('password.request') }}">Forgot password?</a>.</p>
+                            <p><a class="font-bold" href="{{ route('auth.forgot-password') }}">Forgot password?</a>.</p>
                             </p>
                         </div>
                     </div>

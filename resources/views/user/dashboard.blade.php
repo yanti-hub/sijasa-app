@@ -33,7 +33,7 @@
               <a class="nav-link text-white" href="#">Kontak</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color: orange;" href="{{ route('login')}}">Login</a>
+              <a class="nav-link" style="color: orange;" href="{{ route('auth.login')}}">Login</a>
             </li>
           </ul>
       </div>
