@@ -3,10 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-use \App\Http\Controllers\Auth\RegisteredUserController;
-use \App\Http\Controllers\Auth\AuthenticatedSessionController;
-use \App\Http\Controllers\Auth\PasswordResetLinkController;
 
+use App\Http\Controllers\SirkuitController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +17,8 @@ use \App\Http\Controllers\Auth\PasswordResetLinkController;
 |
 */
 
-// Route::get('/tes', function () {
-//      return view('welcome');
+// Route::get('/sirkuit', function () {
+//      return view('sirkuit');
 // });
 
 // Route::get('/admin', function () {
@@ -58,6 +56,9 @@ Route::middleware('guest')->group(function () {
     Route::get('/password', [PasswordResetLinkController::class, 'create'])->name('auth.forgot-password');
     Route::post('/password', [PasswordResetLinkController::class, 'store'])->name('auth.forgot-password');
 });
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
 
 
 
