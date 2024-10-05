@@ -36,12 +36,13 @@ use \App\Http\Controllers\Auth\PasswordResetLinkController;
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     // Route::get('/admin', function () {
     //     return view('layout-admin.admin');
     // })->name('admin');
@@ -54,7 +55,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/register', [RegisteredUserController::class, 'store'])->name('auth.register');
     Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('auth.login');
     Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('auth.login');
-    Route::post('/password', [PasswordResetLinkController::class, 'create'])->name('auth.forgot-password');
+    Route::get('/password', [PasswordResetLinkController::class, 'create'])->name('auth.forgot-password');
     Route::post('/password', [PasswordResetLinkController::class, 'store'])->name('auth.forgot-password');
 });
 

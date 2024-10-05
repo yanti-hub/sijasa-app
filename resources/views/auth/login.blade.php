@@ -1,64 +1,126 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('/template/dist/assets/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{ asset('/template/dist/assets/vendors/bootstrap-icons/bootstrap-icons.css')}}">
-    <link rel="stylesheet" href="{{ asset('/template/dist/assets/css/app.css')}}">
-    <link rel="stylesheet" href="{{ asset('/template/dist/assets/css/pages/auth.css')}}">
-   
-</head>
+    <!-- Bootstrap CSS -->
+    <!-- Use komentar HTML yang benar -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<body>       
-    <div id="auth" class="d-flex justify-content-center align-items-center vh-50">
-        <div class="col-lg-6 col-md-8 col-sm-10"> <!-- Membatasi lebar card agar tidak terlalu besar di layar besar -->
-            <div class="card shadow-lg"> <!-- Card dengan efek bayangan -->
-                <div class="card-body"> <!-- Isi dari card -->
-                    <div id="auth-left">
-                        <!-- <div class="auth-logo mb-4">
-                            <a href="index.html"><img src="{{ asset('/template/dist/assets/images/logo/logo.png')}}" alt="Logo"></a>
-                        </div> -->
-                        <h1 class="auth-title text-center ">Login</h1>
-                        <p class="auth-subtitle text-center mb-5">Log in with your data that you entered during registration.</p>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
-                        <form action="index.html">
-                            <div class="form-group position-relative has-icon-left mb-4">
-                                <input type="text" class="form-control form-control-xl" placeholder="Username">
-                                <div class="form-control-icon">
-                                    <i class="bi bi-person"></i>
-                                </div>
-                            </div>
-                            <div class="form-group position-relative has-icon-left mb-4">
-                                <input type="password" class="form-control form-control-xl" placeholder="Password">
-                                <div class="form-control-icon">
-                                    <i class="bi bi-shield-lock"></i>
-                                </div>
-                            </div>
-                            <div class="form-check form-check-lg d-flex align-items-end">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label text-gray-600" for="flexCheckDefault">
-                                    Keep me logged in
-                                </label>
-                            </div>
-                            <button class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
-                        </form>
-                        <div class="text-center mt-5 text-lg fs-4">
-                            <p class="text-gray-600">Don't have an account? <a href="{{ route('auth.register') }}"
-                                    class="font-bold">Sign
-                                    up</a>.</p>
-                            <p><a class="font-bold" href="{{ route('auth.forgot-password') }}">Forgot password?</a>.</p>
-                            </p>
-                        </div>
+      body, html {
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          background-color: white;
+          height: 100%;
+          font-weight: 700;
+      }
+
+      .container {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .login-form {
+          height: 500px;
+          width: 430px;
+          padding: 0 35px;
+          background-color: white;
+          border: none;
+      }
+
+      input[type="email"], input[type="password"] {
+          border-radius: 20px;
+      }
+
+      .btn-login {
+          height: 35px;
+          border-radius: 20px;
+          font-weight: 700;
+      }
+
+      .link {
+          color: #198754;
+          text-decoration: none;
+      }
+
+      .link:hover {
+          color: #198754;
+          text-decoration: none;
+      }
+
+      .btn-gmail {
+          height: 35px;
+          border: 2px solid grey;
+          border-radius: 20px;
+          font-weight: 700;
+      }
+
+      .img-google {
+        height: 20px;
+        width: 20px;
+      }
+    </style>
+
+    <link rel="stylesheet" href="{{ asset('/css-dashboard/staylelog.css')}}">
+
+    <title>Form Login</title>
+  </head>
+  <body>
+     <div class="container">
+        <div class="card login-form">
+            <div class="card-body">
+                <h5 class="card-title">Login</h5>
+                <h6 class="card-subtitle text-muted mb-5 fw-bold">Please Login To Use This site!</h6>
+
+                 <div class="d-grid mt-5 mb-5">
+                    <button type="submit" class="btn btn-light btn-gmail"><img src="{{asset('/assets/gambar/google.png')}}" alt="Gmail" class="img-google me-2">Sign up with Gmail</button>
+                  </div>
+
+                <form>
+                  <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label">Email*</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+                  </div>
+                  <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Password*</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Min 8 Character">
+                  </div>
+                  
+                  <!-- Ubah typo classs menjadi class -->
+                  <div class="d-flex justify-content-between">
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember Me?</label>
                     </div>
-                </div> <!-- End of card-body -->
-            </div> <!-- End of card -->
-        </div> <!-- End of column wrapper -->
-    </div>
-</body>
 
+                    <div>
+                      <a href="{{ route('auth.forgot-password') }}" class="link">Forgot Password?</a>
+                    </div>
+                  </div>
+
+                  <div class="d-grid mt-5">
+                    <button type="submit" class="btn btn-success btn-login">Login</button>
+                  </div>
+
+                  <div class="mt-3">
+                    <label>Not Registered yet? <a href="{{ route('auth.register') }}" class="link">Create an account</a></label>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
 </html>

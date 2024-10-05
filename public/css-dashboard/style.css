@@ -1,0 +1,30 @@
+.navbar {
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 16px;
+    padding: 8px 15px;
+}
+
+.nav-link:hover {
+    background-color: orange;
+    color: black;
+}
+
+.nav-link-login {
+    color: orange;
+    font-weight: bold;
+}
