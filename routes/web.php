@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\SirkuitController;
 
 
 /*
@@ -16,8 +17,8 @@ use App\Http\Controllers\DashboardController;
 |
 */
 
-// Route::get('/tes', function () {
-//      return view('welcome');
+// Route::get('/sirkuit', function () {
+//      return view('sirkuit');
 // });
 
 // Route::get('/', function () {
@@ -40,5 +41,6 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
 
 
