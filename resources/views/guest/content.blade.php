@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="{{ asset('/template/assets/gambar/stadiun.jpg')}}" alt="" data-aos="fade-in">
+      <img src="{{ asset('/template/assets/img/stadiun.jpg')}}" alt="" data-aos="fade-in">
 
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
@@ -287,12 +287,12 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="service-details.html" class="stretched-link">
+              <a href="{{ url('/sirkuit') }}" class="stretched-link"> 
                 <h3>Sirkuit BMX Muncar</h3>
               </a>
               {{-- <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p> --}}
               <img src="{{ asset('assets/gambar/sirkuit.jpg') }}" class="card-img-top" alt="...">
-              <a href="#" class="btn btn-primary mt-4">Lihat Detail</a>
+              <a href="{{ url('/sirkuit') }}" class="btn btn-primary mt-4">Lihat Detail</a>
             </div>
           </div><!-- End Service Item -->
         </div>
@@ -316,133 +316,104 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-app">Stadion</li>
+            <li data-filter=".filter-product">GOR</li>
+            <li data-filter=".filter-branding">Sirkuit</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('/template/assets/img/portfolio/app-1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/stadiun-1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/gambar/portfolio/app-1.jpg')}}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Stadion 1</h4>
+                <p>Lapangan Stadion Diponegoro Banyuwangi</p>
+                <a href="{{ asset('/template/assets/gambar/portfolio/stadiun-1.jpg')}}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('/template/assets/img/portfolio/product-1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/gor-1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/product-1.jpg')}}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Gor 1</h4>
+                <p>Stadion Indor Gor Tawangalun</p>
+                <a href="{{ asset('/template/assets/img/portfolio/gor-1.jpg')}}" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('/template/assets/img/portfolio/branding-1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/sirkuit-1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/branding-1.jpg')}}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="{{ asset('/template/assets/img/portfolio/books-1.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 1</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/books-1.jpg')}}" title="Branding 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sirkuit 1</h4>
+                <p>Tampilan Sirkuit BMX Muncar</p>
+                <a href="{{ asset('/template/assets/img/portfolio/sirkuit-1.jpg')}}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('/template/assets/img/portfolio/app-2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/stadiun-2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/app-2.jpg')}}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Stadion 2</h4>
+                <p>Tampak Stadion Pada Malam Hari</p>
+                <a href="{{ asset('/template/assets/img/portfolio/stadiun-2.jpg')}}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('/template/assets/img/portfolio/product-2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/gor-2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/product-2.jpg')}}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Gor 2</h4>
+                <p>Lapangan Tennis/Raket</p>
+                <a href="{{ asset('/template/assets/img/portfolio/gor-2.jpg')}}" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('/template/assets/img/portfolio/branding-2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/sirkuit-2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/branding-2.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="{{ asset('/template/assets/img/portfolio/books-2.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 2</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/books-2.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sirkuit 2</h4>
+                <p>Start Lomba di Sirkuit BMX Muncar</p>
+                <a href="{{ asset('/template/assets/img/portfolio/sirkuit-2.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="{{ asset('/template/assets/img/portfolio/app-3.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/stadiun-3.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/app-3.jpg')}}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Stadion  3</h4>
+                <p>Halaman Depan Stadion</p>
+                <a href="{{ asset('/template/assets/img/portfolio/stadiun-3.jpg')}}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="{{ asset('/template/assets/img/portfolio/product-3.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/gor-3.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/product-3.jpg')}}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Gor 3</h4>
+                <p>Kolam Renang Dalam Gor Tawangalun</p>
+                <a href="{{ asset('/template/assets/img/portfolio/gor-3.jpg')}}" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="{{ asset('/template/assets/img/portfolio/branding-3.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/template/assets/img/portfolio/sirkuit-3.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/branding-3.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                <h4>Sirkuit 3</h4>
+                <p>Tampilan Tempat Start Sirkuit dari bawah</p>
+                <a href="{{ asset('/template/assets/img/portfolio/sirkuit-3.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class=""></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class=""></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <img src="{{ asset('/template/assets/img/portfolio/books-3.jpg')}}" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Books 3</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/template/assets/img/portfolio/books-3.jpg')}}" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
+            
 
           </div><!-- End Portfolio Container -->
 
@@ -586,16 +557,17 @@
       <div class="container section-title" data-aos="fade-up">
         <h2>Panduan</h2>
         <p>Tata Cara Melakukan Booking Tempat.</p>
+        <embed class="mt-5" src="/assets/panduan.pdf" type="application/pdf" width="100%" height="500px" />
       </div><!-- End Section Title -->
 
-      <div class="p-3 bg-white" style="width: 100%; height: 800px;">
-      <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
+      
+      <!-- <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
         <h1>PANDUAN<br></h1>
         <h5 class="mt-2">
           <p>Penjelasan tata cara penyewaan di Sijasa Banyuwangi</p></h5>
           <embed class="mt-4" src="/assets/panduan.pdf" type="application/pdf" width="100%" height="500px" />
       </div>
-    </div>
+    </div> -->
 
     </section><!-- /Team Section -->
 
@@ -604,8 +576,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Kontak</h2>
+        <p>Nomor yang dapat dihubungi</p>
       </div><!-- End Section Title -->
 
       <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
@@ -617,7 +589,7 @@
               <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Jl. Jaksa Agung Soeprapto No. 37 Banyuwangi, Jawa timur, Indonesia</p>
               </div>
             </div><!-- End Info Item -->
 
@@ -625,51 +597,33 @@
               <i class="bi bi-telephone flex-shrink-0"></i>
               <div>
                 <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <p>(0333) 418802</p>
               </div>
             </div><!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
+                <h3>Website</h3>
+                <p>reservasi@sijasa.banyuwangikab.go.id</p>
               </div>
             </div><!-- End Info Item -->
 
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
+            <div style="width: 100%; height: 500px;">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100166.02094255405!2d114.363888622397!3d-8.22540430994697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd15b18be5698c5%3A0xae45c43da4328fde!2sDinas%20Pemuda%20dan%20Olahraga%20Kabupaten%20Banyuwangi!5e0!3m2!1sen!2sid!4v1631792986911!5m2!1sen!2sid" 
+                  width="100%" 
+                  height="500" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy">
+              </iframe>
+            </div>    
+          </div>
+      <!-- End Contact Form -->
 
         </div>
 
