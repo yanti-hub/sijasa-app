@@ -13,31 +13,42 @@
   
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-dark ">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bolder" href="#">
-          <img src="{{ asset('assets/logo.png') }}" alt="" width="30" height="30" class="d-inline-block align-text-top">
-        SIJASA BANYUWANGI
-        </a>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="kategori">Kategori</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Panduan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#">Kontak</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" style="color: orange;" href="{{ route('auth.login')}}">Login</a>
-            </li>
-          </ul>
-      </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white fw-bolder" href="#">
+      <img src="{{ asset('assets/logo.png') }}" alt="" width="30" height="30" class="d-inline-block align-text-top">
+      SIJASA BANYUWANGI
+    </a>
+    
+    <!-- Toggler for mobile menu -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12.5A.5.5 0 0 1 3 12h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 8h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 4h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>
+
+    <!-- Collapsible menu items -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="kategori">Kategori</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Panduan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Kontak</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color: orange;" href="{{ route('auth.login')}}">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 
 <!-- gambar slide -->
@@ -158,12 +169,13 @@
   });
 </script>
 
-
+<div class="responsive-div">
+<!-- <div class="p-3 bg-white" style="width: 100%; height: 1800px;"> -->
     
     
-    <div class="p-3 bg-white" style="width: 100%; height: 500px;">
+    <!-- <div class="p-3 bg-white" style="width: 100%; height: 500px;"> -->
       <div class="container">
-        <div class="row align-items-center">
+        <div class="row align-items-center mt-5">
           <!-- sisi kiri: Text -->
           <div class="col-md-6">
             <div class="section-title font-weight-bold" data-aos="fade-up">
@@ -183,15 +195,15 @@
           </div>
         </div>
       </div>
-    </div>
+    <!-- </div> -->
 
 
 
 
     
-    <div class="p-3 bg-white mt-5" style="width: 100%; height: 500px;">
+    <!-- <div class="p-3 bg-white mt-5" style="width: 100%; height: 500px;"> -->
       <!-- Kategori -->
-      <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
+      <div class="container section-title font-weight-bold text-black text-center mt-5" data-aos="fade-up">
         <h1>KATEGORI<br></h1>
         <h5 class="mt-2">
           <p>Tempat atau Fasilitas Apa Saja Yang Dapat Disewa</p></h5>
@@ -241,21 +253,23 @@
           </div>
         </div>`
       </div>
-    </div>
+    <!-- </div> -->
 
-    <div class="p-3 bg-white" style="width: 100%; height: 800px;">
-      <div class="container section-title font-weight-bold text-black text-center" data-aos="fade-up">
+    <!-- <div class="p-3 bg-white" style="width: 100%; height: 800px;"> -->
+      <div class="container section-title font-weight-bold text-black text-center mt-5" data-aos="fade-up">
         <h1>PANDUAN<br></h1>
         <h5 class="mt-2">
           <p>Penjelasan tata cara penyewaan di Sijasa Banyuwangi</p></h5>
           <embed class="mt-4" src="/assets/panduan.pdf" type="application/pdf" width="100%" height="500px" />
       </div>
-    </div>
+    <!-- </div> -->
  
+</div>
+
       <!-- footer -->
-    <div class="p-3 bg-dark" style="width: 100%; height: 600px;" >
+    <!-- <div class="p-3 bg-dark" style="width: 100%; height: 600px;" > -->
       
-      <footer class="text-white pt-5 pb-4">
+      <footer class="bg-dark text-white pt-5 pb-4 mt-5">
 
         <div class="container text-center text-md-left">
           <div class="row text-center text-md-left">
@@ -333,7 +347,7 @@
           </div>
         </div>
       </footer>
-    </div>
+    <!-- </div> -->
     
 
 
