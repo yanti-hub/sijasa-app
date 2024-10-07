@@ -3,7 +3,9 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-
+use App\Http\Controllers\RegisteredUserController;
+use App\Http\Controllers\AuthenticatedSessionController;
+use App\Http\Controllers\PasswordResetLinkController;
 use App\Http\Controllers\SirkuitController;
 
 /*
@@ -24,6 +26,9 @@ use App\Http\Controllers\SirkuitController;
 // Route::get('/admin', function () {
 //     return view('layout-admin.admin');
 // });
+Route::get('/guest', function () {
+     return view('guest.master');
+ });
 // Route::get('/register', function () {
 //     return view('auth.register');
 // });
@@ -35,11 +40,14 @@ use App\Http\Controllers\SirkuitController;
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    // Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
     // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     // Route::get('/admin', function () {
     //     return view('layout-admin.admin');
@@ -57,8 +65,7 @@ Route::middleware('guest')->group(function () {
     Route::post('/password', [PasswordResetLinkController::class, 'store'])->name('auth.forgot-password');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
+
 
 
 

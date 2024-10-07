@@ -41,7 +41,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Sirkuit BMX Muncar</h5>
                       <!-- <p class="card-text">Sirkuit BMX muncar meruakan sirkuit milik pemerintah kabupaten banyuwangi, Sirkuit ini menjadi satu santunya lintasan BMX yang sesuai dengan standarisasi UCI(Union Cliyce Internasioanl).</p> -->
-                      <a href="#" class="btn btn-primary">Lihat Detail</a>
+                      <a href="{{route('sirkuit')}}" class="btn btn-primary">Lihat Detail</a>
                     </div>
                 </div>
               </div>
