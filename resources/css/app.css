@@ -2,3 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Untuk ukuran responsif */
+.responsive-div {
+    padding: 1rem;
+    background-color: white;
+    width: 100%;
+    min-height: 300px; /* Minimum height for smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in the width/height */
+  }
+  
+  /* Media query for tablets or smaller screens */
+  @media (max-width: 768px) {
+    .responsive-div {
+      height: 100%; /* Adjust height to fit content */
+      padding: 1.5rem; /* Add more padding for better spacing */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .responsive-div {
+      height: auto; /* Allow height to adjust based on content */
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  }
+
+
+  /* Custom responsive kategori */
+@media (max-width: 768px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    .p1 {
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .row {
+      gap: 1rem; /* Reduce the space between columns */
+    }
+  
+    .p1 {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+/* Custom ikon navbar putih mobile*/
+.navbar-toggler {
+    border: none; /* Remove default border */
+  }
+  
+  .navbar-toggler svg {
+    fill: white; /* Ensure the SVG icon is white */
+  }
+  
+  

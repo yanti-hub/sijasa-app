@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\PasswordResetLinkController;
@@ -27,9 +28,13 @@ use App\Http\Controllers\StadionDetController;
 // Route::get('/admin', function () {
 //     return view('layout-admin.admin');
 // });
+<<<<<<< HEAD
 Route::get('/tamu', function () {
      return view('guest.master');
  });
+=======
+
+>>>>>>> 954d3da56ed38491b4222350aacaafa8f30a1f29
 // Route::get('/register', function () {
 //     return view('auth.register');
 // });
@@ -43,9 +48,15 @@ Route::get('/tamu', function () {
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
+<<<<<<< HEAD
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
 Route::get('/Stadion-detail', [StadionDetController::class, 'index'])->name('stadiondet');
+=======
+
+// Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+// Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
+>>>>>>> 954d3da56ed38491b4222350aacaafa8f30a1f29
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -71,6 +82,11 @@ Route::middleware('guest')->group(function () {
     Route::post('/login', [AuthenticatedSessionController::class, 'store'])->name('auth.login');
     Route::get('/password', [PasswordResetLinkController::class, 'create'])->name('auth.forgot-password');
     Route::post('/password', [PasswordResetLinkController::class, 'store'])->name('auth.forgot-password');
+});
+
+
+Route::get('/branda', function () {
+    return view('guest.master');
 });
 
 
