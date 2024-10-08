@@ -1,13 +1,9 @@
-@extends('guest.master', [
-    'hidekategorievent' => true,
-    'hideevent' => true,
-    'hideabout' => true,
-])
+@extends('guest.master')
 
 @section('title', 'Dashboard Welcome')
 @section('content')
+  @include('guest.content') 
   @include('guest.navbar')
-  @include('guest.kategorievent')
-  @include('guest.kontenumum')
-  @include('guest.about')
+  @include('guest.header')
+  @include('guest.footer')
 @endsection

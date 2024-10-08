@@ -1,4 +1,4 @@
-<nav id="navmenu" class="navmenu">
+<nav id="navmenu" class="navmenu justify-content-center" >
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>

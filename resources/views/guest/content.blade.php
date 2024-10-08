@@ -264,7 +264,7 @@
               </a>
               {{-- <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p> --}}
               <img src="{{ asset('assets/gambar/stadiun.jpg') }}" class="card-img-top" alt="...">
-              <a href="#" class="btn btn-primary mt-4">Lihat Detail</a>
+              <a href="/detail-stadion" class="btn btn-primary mt-4">Lihat Detail</a>
             </div>
           </div><!-- End Service Item -->
 

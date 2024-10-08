@@ -214,6 +214,10 @@ h6 {
 @media (min-width: 1200px) {
     .navmenu {
         padding: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100px;
     }
 
     .navmenu ul {
@@ -226,6 +230,9 @@ h6 {
 
     .navmenu li {
         position: relative;
+        height: 100px;
+        display: flex;
+        align-items: center;
     }
 
     .navmenu a,
@@ -238,7 +245,7 @@ h6 {
         font-weight: 400;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
         white-space: nowrap;
         transition: 0.3s;
     }

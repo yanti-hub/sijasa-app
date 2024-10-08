@@ -7,6 +7,7 @@ use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\PasswordResetLinkController;
 use App\Http\Controllers\SirkuitController;
+use App\Http\Controllers\StadionDetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ use App\Http\Controllers\SirkuitController;
 // Route::get('/admin', function () {
 //     return view('layout-admin.admin');
 // });
-Route::get('/guest', function () {
+Route::get('/tamu', function () {
      return view('guest.master');
  });
 // Route::get('/register', function () {
@@ -35,12 +36,16 @@ Route::get('/guest', function () {
 // Route::get('/login', function () {
 //     return view('auth.login');
 // });
+ Route::get('/stadion-detail', function () {
+     return view('view-kategori.stadion-det');
+ });
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
+Route::get('/Stadion-detail', [StadionDetController::class, 'index'])->name('stadiondet');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -49,6 +54,9 @@ Route::middleware('auth')->group(function () {
     // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
     // Route::get('/sirkuit', [SirkuitController::class, 'sirkuit'])->name('sirkuit');
     // Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    // Route::get('/Stadion-detail', [StadionDetController::class, 'index'])->name('stadiondet');
+
+    
     // Route::get('/admin', function () {
     //     return view('layout-admin.admin');
     // })->name('admin');

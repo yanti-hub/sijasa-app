@@ -7,7 +7,11 @@
         <h1 class="sitename">Sijasa</h1>
       </a>
 
-      @include('guest.navbar')
+      
+  {{-- @if (!isset($hideNavbar) || $hideNavbar)
+    @include('guest.navbar')
+  @endif --}}
+
 
       <div class="header-social-links">
         <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
